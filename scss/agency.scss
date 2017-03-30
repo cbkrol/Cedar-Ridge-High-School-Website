@@ -2,7 +2,7 @@
 
 // Gray and Brand Colors for use across theme
 
-$theme-primary:    #67aafe;
+$theme-primary:    #fed136;   /*#67aafe */
 $theme-danger:     #e74c3c;
 
 $gray-base:         #000 !default;
@@ -94,7 +94,7 @@ $gray-lighter:      lighten($gray-base, 93.5%) !default; // #eee
 
 @mixin heading-font {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 
