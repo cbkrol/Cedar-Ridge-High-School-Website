@@ -419,6 +419,7 @@ section {
     }
 }
 
+
 // Timeline
 
 .timeline {
@@ -447,6 +448,9 @@ section {
         &:after {
             clear: both;
         }
+        
+        
+
         .timeline-panel {
             width: 100%;
             float: right;
@@ -454,18 +458,23 @@ section {
             position: relative;
             text-align: left;
             &:before {
-                border-left-width: 0;
+                border-left-width: 0; 
                 border-right-width: 15px;
                 left: -15px;
                 right: auto;
             }
             &:after {
-                border-left-width: 0;
+                border-left-width: 0;   
                 border-right-width: 14px;
                 left: -14px;
                 right: auto;
             }
         }
+
+        
+
+
+
         .timeline-image {
             left: 0;
             margin-left: 0;
@@ -601,6 +610,9 @@ section {
         }
     }
 }
+
+
+
 
 // Team Section
 
