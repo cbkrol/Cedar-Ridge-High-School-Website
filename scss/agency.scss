@@ -723,7 +723,10 @@ section#contact {
     .section-subheading {
         color: white;
     }
-    
+
+
+
+
     .form-group {
         margin-bottom: 25px;
         input,
@@ -735,6 +738,11 @@ section#contact {
         }
         textarea.form-control {
             height: 236px;
+        }
+        address {
+            color: white;
+            font: heading-font;
+            font-weight: 700;
         }
     }
     .form-control:focus {
