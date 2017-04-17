@@ -119,6 +119,12 @@ p {
     line-height: 1.75;
 }
 
+li {
+    @include body-font;
+    font-size: 14px;
+    line-height: 1.75;
+}
+
 p.large {
     font-size: 16px;
 }
@@ -401,9 +407,19 @@ section {
     text-transform: none;
 }
 
-// Portfolio Section
+
+
+
+// Courses Section (Agency Portfolio)
 
 #courses {
+
+    background: url(../img/grayscale-frost-texture-5C.jpg) no-repeat center center fixed; 
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 
 
     .portfolio-item {
@@ -674,6 +690,19 @@ section {
 
 // Team Section
 
+#life {
+
+    background: url(../img/concrete-grey-grunge-textures-5C.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+
+    }
+
+
+/*
 .team-member {
     text-align: center;
     margin-bottom: 50px;
@@ -692,7 +721,7 @@ section {
 }
 
 // Clients Aside
-/*
+
 aside.clients {
     img {
         margin: 50px auto;
@@ -705,12 +734,12 @@ aside.clients {
 // Contact Section
 
 section#contact {
-    background-color: $gray-darker;
+    /* background-color: $gray-darker; */
 
     /*
     background-image: url('../img/IMG_9479_copy_transparent2.png');
-*/
-/*https://lostandtaken.com/downloads/scratched-scraped-metal-texture-12/*/
+    */
+    /*https://lostandtaken.com/downloads/scratched-scraped-metal-texture-12/*/
 
     background-image: url('../img/metal-texture-6.jpg');
 
@@ -1039,6 +1068,11 @@ body {
      display:block;
   }
 
+
+.ul {
+    list-style: square;
+    list-style-position: inside;
+    }
 
 /* Carousel styling */
 /*
