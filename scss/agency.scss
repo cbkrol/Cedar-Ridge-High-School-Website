@@ -377,15 +377,28 @@ section {
         font-size: 16px;
         @include serif-font;
         text-transform: none;
-   /*     font-style: italic; */
         font-weight: 400;
         margin-bottom: 75px;
     }
+    h4.section-subheading {
+        font-size: 16px;
+        @include serif-font;
+        text-transform: none;
+        font-weight: 400;
+        margin-bottom: 50px;
+    }
+
+
     h4.list-group-item-heading {
         font-size: 16px;
         @include serif-font;
         text-transform: none;
         font-weight: 400;  
+    }
+
+    .list-group {
+
+        margin-bottom: 200px;
     }
 }
 
@@ -555,7 +568,7 @@ section {
             height: 80px;
             position: absolute;
             z-index: 100;
-            background-color: $theme-primary;
+            background-color: $gray;
             color: white;
             border-radius: 100%;
             border: 7px solid #f1f1f1;  
@@ -860,6 +873,10 @@ ul.social-buttons {
         img {
             margin-bottom: 30px;
         }
+        a {
+            color: blue;  
+        }
+
     }
     .close-modal {
         position: absolute;
@@ -1044,7 +1061,7 @@ body {
     list-style-position: inside;
     }
 
-
+/*
 
 .billboard {
     background-image: url('../img/Courses/Grade9.jpg');
@@ -1056,3 +1073,95 @@ body {
 
 
 }
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$sR: #418a95;
+$sRLight: #418a95 + #222;
+$sRDark: #418a95 - #222;
+$darkGrey:#6b6b6b;
+$offWhite:#f6f3f7;
+$bg:#f6f3f7 - #111;
+$darkBg:#f6f3f7 - #222;
+
+
+
+.flatTable{  
+  width:100%;
+  min-width:250px;
+  border-collapse:collapse;  
+  font-weight:bold;
+  color:$darkGrey;
+  
+  tr{
+    height:50px;
+    background:$darkBg;
+    border-bottom:rgba(0,0,0,.05) 1px solid;
+  }
+  
+  td{    
+    box-sizing:border-box;
+    padding-left:30px;
+    
+  }
+
+.titleTr{
+  height:70px;  
+  color:#f6f3f7; 
+  background:$sR;
+  /*background:$gray-dark;*/
+
+
+  border:0px solid;
+}
+
+
+.headingTr{
+    height:30px;
+    background:$sRLight;
+
+    /*background: $gray;*/
+
+    color:$offWhite; 
+    font-size:8pt;
+    border:0px solid;
+}  
+
+
+
+  
+  .title{
+    width:100%;
+    height:70px;
+    padding-top:20px;
+    padding-left:20px;
+    box-sizing:border-box;
+    background:rgba(0,0,0,.1);
+  }
+}
+
+
+.display{
+
+  width:100%;
+}
+
+
+
