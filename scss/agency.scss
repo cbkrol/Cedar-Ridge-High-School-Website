@@ -862,6 +862,10 @@ ul.social-buttons {
         min-height: 100%;
         padding: 100px 0;
         text-align: center;
+
+        background: url(../img/concrete-grey-grunge-textures-5C.jpg); 
+
+
         h2 {
             margin-bottom: 15px;
             font-size: 3em;
@@ -1075,6 +1079,7 @@ body {
 
 
 
+
 /* Course List Table */
 
 .flatTable{  
@@ -1088,7 +1093,9 @@ body {
   
   tr{
     height:50px;
+
     background: white;
+
     border-bottom:rgba(0,0,0,.05) 1px solid;
     }
   
