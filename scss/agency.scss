@@ -859,6 +859,10 @@ ul.social-buttons {
         min-height: 100%;
         padding: 100px 0;
         text-align: center;
+
+        background: url(../img/concrete-grey-grunge-textures-5C.jpg); 
+
+
         h2 {
             margin-bottom: 15px;
             font-size: 3em;
@@ -1071,9 +1075,6 @@ body {
     }
 
 
-
-
-
 .flatTable{  
   width:100%;
   border: 3px solid;
@@ -1085,7 +1086,9 @@ body {
   
   tr{
     height:50px;
-    background:$inputBorder;
+
+    background: white;
+
     border-bottom:rgba(0,0,0,.05) 1px solid;
     }
   
