@@ -89,8 +89,12 @@ $inputBorder:       #ccc;
   font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
 }
 
-@mixin body-font {
+/*@mixin body-font {
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}*/
+
+@mixin body-font {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 @mixin heading-font {
@@ -375,14 +379,14 @@ section {
     }
     h3.section-subheading {
         font-size: 16px;
-        @include serif-font;
+       /* @include serif-font; */
         text-transform: none;
         font-weight: 400;
         margin-bottom: 75px;
     }
     h4.section-subheading {
         font-size: 16px;
-        @include serif-font;
+       /* @include serif-font;*/
         text-transform: none;
         font-weight: 400;
         margin-bottom: 50px;
@@ -391,7 +395,7 @@ section {
 
     h4.list-group-item-heading {
         font-size: 16px;
-        @include serif-font;
+       /* @include serif-font;*/
         text-transform: none;
         font-weight: 400;  
     }
@@ -568,7 +572,7 @@ section {
             height: 80px;
             position: absolute;
             z-index: 100;
-            background-color: $gray;
+            background-color: $theme-primary;
             color: white;
             border-radius: 100%;
             border: 7px solid #f1f1f1;  
@@ -597,7 +601,7 @@ section {
             }
         }
         &:last-child {
-            margin-bottom: 0;
+           margin-bottom: 0;
         }
     }
     .timeline-heading {
@@ -637,8 +641,8 @@ section {
                 left: 50%;
                 margin-left: -50px;
                 h4 {
-                    font-size: 13px;
-                    margin-top: 16px;
+                    font-size: 12px;
+                    margin-top: 8px;
                     line-height: 18px;
                 }
             }
@@ -663,8 +667,8 @@ section {
                 height: 150px;
                 margin-left: -75px;
                 h4 {
-                    font-size: 18px;
-                    margin-top: 30px;
+                    font-size: 16px;
+                    margin-top: 20px;
                     line-height: 26px;
                 }
             }
@@ -687,7 +691,7 @@ section {
                 height: 170px;
                 margin-left: -85px;
                 h4 {
-                    margin-top: 40px;
+                    margin-top: 32px;
                 }
             }
             &.timeline-inverted > .timeline-panel {
@@ -844,6 +848,8 @@ ul.social-buttons {
         height: 100%;
         width: auto;
     }
+
+    
     .modal-content {
         border-radius: 0;
         background-clip: border-box;
@@ -853,6 +859,10 @@ ul.social-buttons {
         min-height: 100%;
         padding: 100px 0;
         text-align: center;
+
+        background: url(../img/concrete-grey-grunge-textures-5C.jpg); 
+
+
         h2 {
             margin-bottom: 15px;
             font-size: 3em;
@@ -874,7 +884,10 @@ ul.social-buttons {
             margin-bottom: 30px;
         }
         a {
-            color: blue;  
+            color: $gray-darker;  
+        }
+        .flatTable{
+            @include heading-font;
         }
 
     }
@@ -1061,107 +1074,49 @@ body {
     list-style-position: inside;
     }
 
-/*
 
-.billboard {
-    background-image: url('../img/Courses/Grade9.jpg');
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center center; 
-    @include background-cover;
-    text-align: center; 
-
-
-}
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-$sR: #418a95;
-$sRLight: #418a95 + #222;
-$sRDark: #418a95 - #222;
-$darkGrey:#6b6b6b;
-$offWhite:#f6f3f7;
-$bg:#f6f3f7 - #111;
-$darkBg:#f6f3f7 - #222;
 
 
 
 .flatTable{  
   width:100%;
-  min-width:250px;
+  border: 3px solid;
+  border-color: $gray-darker;
+  min-width:260px;
   border-collapse:collapse;  
-  font-weight:bold;
-  color:$darkGrey;
+  /*font-weight:bold;*/
+  color: gray;
   
   tr{
     height:50px;
-    background:$darkBg;
+    background: white;
     border-bottom:rgba(0,0,0,.05) 1px solid;
-  }
+    }
   
   td{    
-    box-sizing:border-box;
-    padding-left:30px;
-    
-  }
+    box-sizing:border-box; 
+    }
 
 .titleTr{
   height:70px;  
-  color:#f6f3f7; 
-  background:$sR;
-  /*background:$gray-dark;*/
-
-
-  border:0px solid;
+  color: $theme-primary;
+  background:$gray-dark;
+  border: 0px solid;
 }
 
 
 .headingTr{
     height:30px;
-    background:$sRLight;
-
-    /*background: $gray;*/
-
-    color:$offWhite; 
+    background: $gray;
+    color: $theme-primary;
     font-size:8pt;
     border:0px solid;
 }  
 
 
 
-  
-  .title{
-    width:100%;
-    height:70px;
-    padding-top:20px;
-    padding-left:20px;
-    box-sizing:border-box;
-    background:rgba(0,0,0,.1);
-  }
 }
 
-
-.display{
-
-  width:100%;
-}
 
 
 
