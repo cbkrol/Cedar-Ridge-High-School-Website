@@ -137,6 +137,7 @@ p.large {
     font-size: 16px;
 }
 
+
 a,
 a:hover,
 a:focus,
@@ -853,18 +854,12 @@ ul.social-buttons {
     .modal-content {
         border-radius: 0;
         background-clip: border-box;
-
-        background: url(../img/concrete-grey-grunge-textures-5C.jpg);
-
         -webkit-box-shadow: none;
         box-shadow: none;
         border: none;
         min-height: 100%;
         padding: 100px 0;
         text-align: center;
-
-        background: url(../img/concrete-grey-grunge-textures-5C.jpg); 
-
 
         h2 {
             margin-bottom: 15px;
@@ -886,11 +881,39 @@ ul.social-buttons {
         img {
             margin-bottom: 30px;
         }
+        
+
         a {
+            color: #3498db;  
+        }
+
+
+        
+        a:hover {
+            color: red;
+        }
+
+        
+        table td {
+            text-align: left;
             color: $gray-darker;  
         }
-        .flatTable{
+        
+
+        table th {
+            text-align: center;
+            color: $gray-darker; 
+            background-color: $gray-lighter;
+        }
+
+        th.large {
+            font-size: 18px;
+        }
+           
+        .btn-primary {
+            @include button-variant($gray-darker, $gray-lighter, $gray-lighter);
             @include heading-font;
+            font-weight: 700;
         }
 
     }
@@ -1067,9 +1090,12 @@ body {
   border-color: #ddd #ddd #ddd transparent;
   *border-left-color: #ffffff;
 }
+
+/*
 .table{
      display:block;
   }
+*/
 
 
 .ul {
@@ -1077,51 +1103,6 @@ body {
     list-style-position: inside;
     }
 
-
-
-
-/* Course List Table */
-
-.flatTable{  
-  width:100%;
-  border: 3px solid;
-  border-color: $gray-darker;
-  min-width:260px;
-  border-collapse:collapse;  
-  /*font-weight:bold;*/
-  color: gray;
-  
-  tr{
-    height:50px;
-
-    background: white;
-
-    border-bottom:rgba(0,0,0,.05) 1px solid;
-    }
-  
-  td{    
-    box-sizing:border-box; 
-    }
-
-.titleTr{
-  height:70px;  
-  color: $theme-primary;
-  background:$gray-dark;
-  border: 0px solid;
-}
-
-
-.headingTr{
-    height:30px;
-    background: $gray;
-    color: $theme-primary;
-    font-size:8pt;
-    border:0px solid;
-}  
-
-
-
-}
 
 
 
