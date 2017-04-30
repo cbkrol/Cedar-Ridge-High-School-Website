@@ -330,7 +330,7 @@ header {
         padding-top: 100px;
         padding-bottom: 50px;
         .intro-lead-in {
-            @include serif-font;
+        /*    @include serif-font; */
        /*     font-style: italic; */
             font-size: 22px;
             line-height: 22px;
@@ -352,7 +352,7 @@ header {
             padding-top: 300px;
             padding-bottom: 200px;
             .intro-lead-in {
-                @include serif-font;
+           /*     @include serif-font; */
           /*      font-style: italic;  */
                 font-size: 40px;
                 line-height: 40px;
@@ -490,7 +490,7 @@ section {
                 margin: 0;
             }
             p {
-                @include serif-font;
+           /*     @include serif-font; */
            /*     font-style: italic; */
                 font-size: 16px;
                 margin: 0;
@@ -870,7 +870,7 @@ ul.social-buttons {
         }
         p.item-intro {
             margin: 20px 0 30px;
-            @include serif-font;
+        /*    @include serif-font; */
         /*    font-style: italic;  */
             font-size: 16px;
         }
