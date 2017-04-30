@@ -722,16 +722,7 @@ section {
 // Contact Section
 
 section#contact {
-    /* background-color: $gray-darker; */
-
-    /*
-    background-image: url('../img/IMG_9479_copy_transparent2.png');
-    */
-    /*https://lostandtaken.com/downloads/scratched-scraped-metal-texture-12/*/
-
     background-image: url('../img/metal-texture-6.jpg');
-
-
     background-position: center;
     background-repeat: no-repeat;
     .section-heading {
@@ -870,13 +861,27 @@ ul.social-buttons {
         }
         p.item-intro {
             margin: 20px 0 30px;
-        /*    @include serif-font; */
-        /*    font-style: italic;  */
             font-size: 16px;
         }
         ul.list-inline {
             margin-bottom: 30px;
             margin-top: 0;
+        }
+
+        h4.termsOfUse {
+            text-align: left;
+        }
+
+        p.termsOfUse {
+            text-align: left;
+        }
+
+
+        ul.termsOfUseList{
+            text-align: left;
+            margin-bottom: 30px;
+            margin-top: 0;
+
         }
         img {
             margin-bottom: 30px;
