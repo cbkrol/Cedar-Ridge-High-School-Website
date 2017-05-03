@@ -89,9 +89,10 @@ $inputBorder:       #ccc;
   font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
 }
 
-/*@mixin body-font {
-  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}*/
+@mixin body-policy-font {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 
 @mixin body-font {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -128,7 +129,7 @@ p {
 }
 
 li {
-    @include body-font;
+    /* @include body-font;*/
     font-size: 14px;
     line-height: 1.75;
 }
@@ -797,6 +798,10 @@ footer {
         line-height: 40px;
         @include heading-font;
         text-transform: none;
+        a {
+        color: $gray-darker;
+        }
+  
     }
 }
 
@@ -868,21 +873,35 @@ ul.social-buttons {
             margin-top: 0;
         }
 
+        h2.termsOfUse {
+            @include body-policy-font;
+        }
+
         h4.termsOfUse {
             text-align: left;
+            @include body-policy-font;
         }
 
         p.termsOfUse {
             text-align: left;
+            @include body-policy-font;
+        }
+
+        p.termsOfUseList {
+            text-align: left;
+            margin-bottom: 5px;
+            margin-top: 0;
+            @include body-policy-font;
         }
 
 
-        ul.termsOfUseList{
+        ul.termsOfUseList {
             text-align: left;
             margin-bottom: 30px;
             margin-top: 0;
-
+            @include body-policy-font;
         }
+
         img {
             margin-bottom: 30px;
         }
@@ -917,8 +936,8 @@ ul.social-buttons {
            
         .btn-primary {
             @include button-variant($gray-darker, $gray-lighter, $gray-lighter);
-            @include heading-font;
-            font-weight: 700;
+            @include body-policy-font;
+            font-weight: 500;
         }
 
     }
