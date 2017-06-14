@@ -422,8 +422,48 @@ section {
 }
 
 
+// About Section
+#about {
+    background-color: $gray;
+    .section-heading{
+        color: white;
+    }
+    .section-subheading{
+        color: white;
+    }
+}
 
 
+
+#myCircleDiv {
+    width:375px;
+    height:375px;
+    //height: 100%;
+    //width: 100%;
+    border-radius:50%;
+    display:inline-block;
+    line-height:375px;
+    text-align:center;
+    color:$gray;
+    background: $theme-primary;
+
+    .text-white{
+        color: white;
+
+    }
+    .spacer{
+        color: $theme-primary;
+    }
+
+    .section-heading{
+        color: $gray;
+        font-size: 45px;
+    }
+
+    .section-subheading{
+   //     font-weight: 700;
+    }
+}
 // Courses Section (Agency Portfolio)
 
 #courses {
@@ -575,7 +615,7 @@ section {
             position: absolute;
             z-index: 100;
             background-color: $theme-primary;
-            color: white;
+            color: $gray;
             border-radius: 100%;
             border: 7px solid #f1f1f1;  
             text-align: center;
