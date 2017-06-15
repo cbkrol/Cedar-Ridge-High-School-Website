@@ -424,14 +424,19 @@ section {
 
 // About Section
 #about {
-    background-color: $gray;
-    .section-heading{
-        color: white;
+        background: url(../img/concrete-grey-grunge-textures-5C.jpg) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+
+        .section-heading{
+            color: white;
+        }
+        .section-subheading{
+            color: white;
+        }
     }
-    .section-subheading{
-        color: white;
-    }
-}
 
 
 
