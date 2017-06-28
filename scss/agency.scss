@@ -81,10 +81,6 @@ $inputBorder:       #ccc;
 
 // Font Mixins
 
-@mixin serif-font {
-  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
 @mixin script-font {
   font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
 }
@@ -331,8 +327,6 @@ header {
         padding-top: 100px;
         padding-bottom: 50px;
         .intro-lead-in {
-        /*    @include serif-font; */
-       /*     font-style: italic; */
             font-size: 22px;
             line-height: 22px;
             margin-bottom: 25px;
@@ -353,8 +347,6 @@ header {
             padding-top: 300px;
             padding-bottom: 200px;
             .intro-lead-in {
-           /*     @include serif-font; */
-          /*      font-style: italic;  */
                 font-size: 40px;
                 line-height: 40px;
                 margin-bottom: 25px;
@@ -381,14 +373,12 @@ section {
     }
     h3.section-subheading {
         font-size: 18px;
-       /* @include serif-font; */
         text-transform: none;
         font-weight: 400;
         margin-bottom: 75px;
     }
     h4.section-subheading {
         font-size: 16px;
-       /* @include serif-font;*/
         text-transform: none;
         font-weight: 400;
         margin-bottom: 50px;
@@ -397,7 +387,6 @@ section {
 
     h4.list-group-item-heading {
         font-size: 16px;
-       /* @include serif-font;*/
         text-transform: none;
         font-weight: 400;  
     }
@@ -536,8 +525,6 @@ section {
                 margin: 0;
             }
             p {
-           /*     @include serif-font; */
-           /*     font-style: italic; */
                 font-size: 16px;
                 margin: 0;
             }
