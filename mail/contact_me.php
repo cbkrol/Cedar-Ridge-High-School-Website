@@ -17,7 +17,7 @@ $message = strip_tags(htmlspecialchars($_POST['message']));
    
 // Create the email and send the message
 $to  = 'info@cedarridgehighschool.ca' . ', ';  // This is where the form will send a message to.
-$to .= 'helen@kanata-montessori.com';// multiple recipients
+$to .= 'helen@kanata-montessori.com' . ', ';// multiple recipients
 $to .= 'cbkrol@gmail.com';// temporary for testing purposes
 
 $email_subject = "Cedar Ridge | Contact Form Submission:  $name";
@@ -29,7 +29,7 @@ $email_body = "You have received a new message from your website contact form.\n
 $headers = 'MIME-Version: 1.0' . "\r\n"; 
 $headers .= 'Content-type: text/plain; charset=iso-8859-1' . "\r\n"; 
 
-$headers = "From: noreply@cedarridgehighschool.ca\n"; // This is the email address the generated message will be from.
+$headers = "From: noreply@cedarridgehighschool.ca\r\n"; // This is the email address the generated message will be from.
 $headers .= "Reply-To: $email_address";   
 mail($to,$email_subject,$email_body,$headers);
 return true;         
