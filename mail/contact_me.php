@@ -19,6 +19,8 @@ $message = strip_tags(htmlspecialchars($_POST['message']));
 $to  = 'info@cedarridgehighschool.ca' . ', ';  // This is where the form will send a message to.
 $to .= 'donna@cedarridgehighschool.ca' . ', ';// multiple recipients
 $to .= 'michelle@cedarridgehighschool.ca' . ', ';// multiple recipients
+$to .= 'michelle@kmscrhs.ca' . ', ';// multiple recipients
+$to .= 'kristina@kmscrhs.ca' . ', ';// multiple recipients
 $to .= 'cbkrol@gmail.com';// webmaster for testing purposes
 
 $email_subject = "Cedar Ridge | Contact Form Submission:  $name";
